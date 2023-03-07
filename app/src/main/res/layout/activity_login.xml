@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bg"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dime10"
+            android:src="@drawable/hello_rafiki"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textColor="@color/borderstork"
+            android:layout_marginStart="@dimen/dime20"
+            android:layout_marginBottom="@dimen/dime15"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dime30"
+            android:layout_marginEnd="@dimen/dime30"
+            app:boxCornerRadiusTopStart="@dimen/dime10"
+            app:boxCornerRadiusBottomStart="@dimen/dime10"
+            app:boxCornerRadiusTopEnd="@dimen/dime10"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:hintEnabled="true"
+            app:boxStrokeColor="@color/borderstork">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_emailid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="EmailId"
+                android:padding="@dimen/dime13"
+                android:inputType="textEmailAddress"
+                app:boxStrokeWidth="1dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dime30"
+            android:layout_marginEnd="@dimen/dime30"
+            android:layout_marginTop="@dimen/dime15"
+            app:boxCornerRadiusTopStart="@dimen/dime10"
+            app:boxCornerRadiusBottomStart="@dimen/dime10"
+            app:boxCornerRadiusTopEnd="@dimen/dime10"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:passwordToggleEnabled="true"
+            app:hintEnabled="true"
+
+            app:boxStrokeColor="@color/borderstork">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:padding="@dimen/dime5"
+                android:inputType="textEmailAddress"
+                app:boxStrokeWidth="1dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="Login"
+            android:id="@+id/bt_login"
+            android:background="@drawable/bt_bg"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/borderstork"
+            android:layout_marginTop="@dimen/dime20"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>
