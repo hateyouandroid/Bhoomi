@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.myapplication'
+    namespace 'com.bhoomi'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.myapplication"
+        applicationId "com.bhoomi"
         minSdk 24
         targetSdk 33
         versionCode 1

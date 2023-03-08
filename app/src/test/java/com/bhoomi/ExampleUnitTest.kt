@@ -1,4 +1,4 @@
-package com.myapplication
+package com.bhoomi
 
 import org.junit.Test
 
