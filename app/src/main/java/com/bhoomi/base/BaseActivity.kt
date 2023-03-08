@@ -29,6 +29,7 @@ abstract class BaseActivity<_binding : ViewBinding>(val bindingFactory: (LayoutI
     }
 
 
+
     open fun initView() {}
     open fun setObserver() {}
     open fun onClick() {}
