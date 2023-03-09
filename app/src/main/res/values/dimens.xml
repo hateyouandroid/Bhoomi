@@ -22,4 +22,6 @@
     <dimen name="dime7">7dp</dimen>
     <dimen name="dime13">13dp</dimen>
     <dimen name="dime1">1dp</dimen>
+    <dimen name="dime0">0dp</dimen>
+    <dimen name="dime200">200dp</dimen>
 </resources>

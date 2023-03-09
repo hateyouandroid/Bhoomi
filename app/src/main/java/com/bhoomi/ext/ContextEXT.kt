@@ -4,6 +4,9 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.widget.Toast
+import com.bhoomi.LoginActivity
+import com.bhoomi.R
+import com.google.android.material.bottomsheet.BottomSheetDialog
 
 
 fun Context.printTost(massage:String)
@@ -21,5 +24,13 @@ fun Context.logout()
     //startActivity(LoginActivity())
 }
 fun Context.openFragment(){
+
+}
+fun Context.addbottomSheet(con: Activity)
+{
+    val btnsheet = con.layoutInflater.inflate(R.layout.fragment_bottom_sheet, null)
+   val  bottomSheetDialog= BottomSheetDialog(this)
+    bottomSheetDialog.setContentView(btnsheet)
+    bottomSheetDialog.show()
 
 }
