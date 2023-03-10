@@ -3,236 +3,297 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/login_bg"
     tools:context=".fragment.Home">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dime5"
+                    android:text="welcome bhoomi"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/dime10">
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:padding="@dimen/dime2"
+                android:layout_marginEnd="@dimen/dime15"
+                android:src="@drawable/rewards" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_profile" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.Toolbar>
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/dime100"
         tools:ignore="MissingConstraints">
-   <TableLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_margin="@dimen/dime20"
 
-       tools:ignore="MissingConstraints">
-       <TableRow
-           android:padding="5dp">
-           <LinearLayout
-               android:layout_marginTop="@dimen/dime0"
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dime20"
+            android:background="@drawable/dialog_bg"
+            tools:ignore="MissingConstraints">
 
-               android:orientation="vertical"
-               android:layout_weight="1"
-               >
-               <com.google.android.material.floatingactionbutton.FloatingActionButton
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_marginEnd="@dimen/dime5"
-                   android:contentDescription="TODO"
-                   android:gravity="center"
-                   android:layout_gravity="center"
-                   android:src="@drawable/ic_home" />
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center"
-                   android:text="home"
-                   />
+            <TableRow android:padding="5dp">
 
-           </LinearLayout>
-           <LinearLayout
-               android:orientation="vertical"
-               android:layout_weight="1"
-               >
-               <com.google.android.material.floatingactionbutton.FloatingActionButton
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_marginEnd="@dimen/dime5"
-                   android:contentDescription="TODO"
-                   android:gravity="center"
-                   android:layout_gravity="center"
-                   android:src="@drawable/ic_home" />
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center"
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dime0"
 
-                   android:text="home \nhiii"
-                   />
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-           </LinearLayout>
-           <LinearLayout
-               android:orientation="vertical"
-               android:layout_weight="1"
-               >
-               <com.google.android.material.floatingactionbutton.FloatingActionButton
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_marginEnd="@dimen/dime5"
-                   android:contentDescription="TODO"
-                   android:gravity="center"
-                   android:layout_gravity="center"
-                   android:src="@drawable/ic_home" />
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center"
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/dime5"
+                        android:contentDescription="TODO"
+                        android:gravity="center"
+                        android:src="@drawable/ic_phone" />
 
-                   android:text="home"
-                   />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dime10"
+                        android:layout_gravity="center"
+                        android:text="home" />
 
-           </LinearLayout>
+                </LinearLayout>
 
-       </TableRow>
-       <TableRow
-           android:padding="5dp">
-           <LinearLayout
-               android:layout_marginTop="@dimen/dime0"
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-               android:orientation="vertical"
-               android:layout_weight="1"
-               >
-               <com.google.android.material.floatingactionbutton.FloatingActionButton
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_marginEnd="@dimen/dime5"
-                   android:contentDescription="TODO"
-                   android:gravity="center"
-                   android:layout_gravity="center"
-                   android:src="@drawable/ic_home" />
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center"
-                   android:text="home"
-                   />
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/dime5"
+                        android:contentDescription="TODO"
+                        android:gravity="center"
+                        android:src="@drawable/ic_home" />
 
-           </LinearLayout>
-           <LinearLayout
-               android:orientation="vertical"
-               android:layout_weight="1"
-               >
-               <com.google.android.material.floatingactionbutton.FloatingActionButton
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_marginEnd="@dimen/dime5"
-                   android:contentDescription="TODO"
-                   android:gravity="center"
-                   android:layout_gravity="center"
-                   android:src="@drawable/ic_home" />
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/dime10"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
 
-                   android:text="home \n"
-                   />
+                        android:text="home" />
 
-           </LinearLayout>
-           <LinearLayout
-               android:orientation="vertical"
-               android:layout_weight="1"
-               >
-               <com.google.android.material.floatingactionbutton.FloatingActionButton
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_marginEnd="@dimen/dime5"
-                   android:contentDescription="TODO"
-                   android:gravity="center"
-                   android:layout_gravity="center"
-                   android:src="@drawable/ic_home" />
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center"
+                </LinearLayout>
 
-                   android:text="home"
-                   />
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-           </LinearLayout>
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/dime5"
+                        android:contentDescription="TODO"
+                        android:gravity="center"
+                        android:src="@drawable/ic_qr" />
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dime10"
+                        android:text="home" />
 
+                </LinearLayout>
 
+            </TableRow>
 
-       </TableRow>
-       <TableRow
-           android:padding="5dp">
-           <LinearLayout
-               android:layout_marginTop="@dimen/dime0"
+            <TableRow android:padding="5dp">
 
-               android:orientation="vertical"
-               android:layout_weight="1"
-               >
-               <com.google.android.material.floatingactionbutton.FloatingActionButton
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_marginEnd="@dimen/dime5"
-                   android:contentDescription="TODO"
-                   android:gravity="center"
-                   android:layout_gravity="center"
-                   android:src="@drawable/ic_home" />
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center"
-                   android:text="home"
-                   />
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dime0"
 
-           </LinearLayout>
-           <LinearLayout
-               android:orientation="vertical"
-               android:layout_weight="1"
-               >
-               <com.google.android.material.floatingactionbutton.FloatingActionButton
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_marginEnd="@dimen/dime5"
-                   android:contentDescription="TODO"
-                   android:gravity="center"
-                   android:layout_gravity="center"
-                   android:src="@drawable/ic_home" />
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-                   android:text="home \n"
-                   />
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/dime5"
+                        android:contentDescription="TODO"
+                        android:gravity="center"
+                        android:src="@drawable/ic_qr" />
 
-           </LinearLayout>
-           <LinearLayout
-               android:orientation="vertical"
-               android:layout_weight="1"
-               >
-               <com.google.android.material.floatingactionbutton.FloatingActionButton
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_marginEnd="@dimen/dime5"
-                   android:contentDescription="TODO"
-                   android:gravity="center"
-                   android:layout_gravity="center"
-                   android:src="@drawable/ic_home" />
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dime10"
+                        android:text="home" />
 
-                   android:text="home"
-                   />
+                </LinearLayout>
 
-           </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/dime5"
+                        android:contentDescription="TODO"
+                        android:gravity="center"
+                        android:src="@drawable/ic_phone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dime10"
+                        android:text="home \n" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/dime5"
+                        android:contentDescription="TODO"
+                        android:gravity="center"
+                        android:src="@drawable/ic_home" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dime10"
+                        android:text="home" />
+
+                </LinearLayout>
 
 
+            </TableRow>
+
+            <TableRow android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dime0"
+
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/dime5"
+                        android:contentDescription="TODO"
+                        android:gravity="center"
+                        android:src="@drawable/ic_qr" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dime10"
+                        android:text="Scan" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/dime5"
+                        android:contentDescription="TODO"
+                        android:gravity="center"
+                        android:src="@drawable/ic_home" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dime10"
+                        android:text="home" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/dime5"
+                        android:contentDescription="TODO"
+                        android:gravity="center"
+                        android:src="@drawable/ic_phone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dime10"
+                        android:text="Cradit" />
+
+                </LinearLayout>
 
 
-       </TableRow>
+            </TableRow>
 
 
-
-
-
-
-
-   </TableLayout>
+        </TableLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

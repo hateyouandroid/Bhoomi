@@ -24,4 +24,5 @@
     <dimen name="dime1">1dp</dimen>
     <dimen name="dime0">0dp</dimen>
     <dimen name="dime200">200dp</dimen>
+    <dimen name="dime40">40dp</dimen>
 </resources>

@@ -51,10 +51,10 @@
         android:shape="ring"
         android:thicknessRatio="1.9">
         <ImageView
-            android:layout_height="80dp"
+            android:layout_height="60dp"
             android:layout_width="match_parent"
             android:id="@+id/imageView1"
-            android:src="@drawable/ic_baseline_panorama_fish_eye_24"
+            android:src="@drawable/ic_home"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true">
         </ImageView>
