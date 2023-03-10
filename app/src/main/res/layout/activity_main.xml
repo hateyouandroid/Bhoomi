@@ -1,10 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dime5"
+                    android:text="welcome bhoomi"
+                    android:textColor="@color/black"
+                    android:textAllCaps="true"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/dime10">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="@dimen/dime15"
+                android:padding="@dimen/dime2"
+                android:src="@drawable/rewards" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dime30"
+                android:layout_height="@dimen/dime30"
+                android:src="@drawable/ic_profile" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.Toolbar>
+
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/main_frag_contaner"
@@ -20,10 +73,10 @@
         android:layout_height="wrap_content"
         app:fabCradleMargin="@dimen/dime0"
         app:fabAlignmentMode="center"
-
         app:fabCradleRoundedCornerRadius="@dimen/dime0"
         app:fabCradleVerticalOffset="@dimen/dime0"
-        android:layout_gravity="bottom">
+        android:layout_gravity="bottom"
+        tools:ignore="BottomAppBar">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_nav_bar"
@@ -77,4 +130,4 @@
         app:rippleColor="@color/white" />-->
 
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

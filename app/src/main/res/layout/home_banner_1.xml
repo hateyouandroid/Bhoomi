@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_marginEnd="@dimen/dime20"
+        android:background="@drawable/home_frag_banner_1"
+        android:layout_marginTop="@dimen/dime20"
+        android:layout_marginStart="@dimen/dime20"
+        android:layout_height="80dp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:text="Offers"
+            android:layout_margin="@dimen/dime5"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+        <!--
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:text="View"
+                        style="@style/ThemeOverlay.Material3.Button.ElevatedButton"
+                        android:textColor="@color/white"
+                        android:background="@drawable/bt_bg"
+                        android:layout_marginStart="@dimen/dime140"
+                        android:layout_gravity="bottom"
+                        android:layout_height="wrap_content"/>
+        -->
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>
