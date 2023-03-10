@@ -65,7 +65,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/fisrtcard"
-        android:layout_marginTop="@dimen/dime80"
+       android:layout_marginTop="@dimen/dime60"
+        android:paddingTop="@dimen/dime50"
+        android:paddingBottom="@dimen/dime20"
         android:background="@drawable/gradiant_for_home_frag_1"
         tools:ignore="MissingConstraints">
 

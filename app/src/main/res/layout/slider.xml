@@ -3,9 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.LinearLayoutCompat
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </androidx.appcompat.widget.LinearLayoutCompat>
+        android:layout_marginStart="@dimen/dime20"
+        android:layout_marginEnd="@dimen/dime20"
+        android:layout_height="@dimen/dime80">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:text="Offer"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.card.MaterialCardView>
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/main_frag_contaner"
         android:layout_width="match_parent"
@@ -54,7 +55,7 @@
             android:layout_height="60dp"
             android:layout_width="match_parent"
             android:id="@+id/imageView1"
-            android:src="@drawable/ic_home"
+            android:src="@drawable/ic_home_1"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true">
         </ImageView>
