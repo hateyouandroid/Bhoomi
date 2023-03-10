@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/login_bg"
     tools:context=".fragment.Home">
 
@@ -27,8 +28,8 @@
                     android:layout_marginEnd="@dimen/dime5"
                     android:text="welcome bhoomi"
                     android:textAllCaps="true"
-                    android:textStyle="bold"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
 
             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -43,34 +44,35 @@
             android:layout_marginEnd="@dimen/dime10">
 
 
-
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="40dp"
                 android:layout_height="30dp"
-                android:padding="@dimen/dime2"
                 android:layout_marginEnd="@dimen/dime15"
+                android:padding="@dimen/dime2"
                 android:src="@drawable/rewards" />
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/dime30"
+                android:layout_height="@dimen/dime30"
                 android:src="@drawable/ic_profile" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.appcompat.widget.Toolbar>
 
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/dime100"
+        android:id="@+id/fisrtcard"
+        android:layout_marginTop="@dimen/dime80"
+        android:background="@drawable/gradiant_for_home_frag_1"
         tools:ignore="MissingConstraints">
 
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/dime20"
-            android:background="@drawable/dialog_bg"
             tools:ignore="MissingConstraints">
 
             <TableRow android:padding="5dp">
@@ -93,8 +95,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/dime10"
                         android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dime10"
                         android:text="home" />
 
                 </LinearLayout>
@@ -114,9 +116,9 @@
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_marginTop="@dimen/dime10"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dime10"
 
                         android:text="home" />
 
@@ -297,4 +299,4 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
