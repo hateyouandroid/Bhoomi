@@ -1,9 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NotificationActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dime5"
+        android:layout_marginStart="@dimen/dime10"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:text="Select a Category"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:padding="@dimen/dime5"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_close"
+            android:padding="@dimen/dime5"
+            android:id="@+id/img_close"
+            android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dime50"
+        tools:listitem="@layout/notification_demo"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

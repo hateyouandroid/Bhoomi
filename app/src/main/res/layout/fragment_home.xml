@@ -264,7 +264,7 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cv_spin"
-            android:backgroundTint="@color/spinnerbg"
+            android:backgroundTint="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/dime20"
@@ -322,7 +322,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:elevation="@dimen/dime12"
-            app:cardElevation="@dimen/dime10"
+            app:cardElevation="@dimen/dime5"
             android:id="@+id/view2"
             app:layout_anchor="@id/cv_spin"
             android:layout_marginStart="@dimen/dime50"
@@ -337,9 +337,7 @@
                 android:id="@+id/imageView1"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/chakri2"
-                >
-            </ImageView>
+                android:src="@drawable/chakri2"/>
         </androidx.cardview.widget.CardView>
 
 

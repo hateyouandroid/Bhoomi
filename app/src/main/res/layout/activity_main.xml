@@ -59,6 +59,7 @@
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="@dimen/dime30"
                 android:layout_height="@dimen/dime30"
+                android:id="@+id/notifiy"
                 android:src="@drawable/ic_profile" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
@@ -82,9 +83,6 @@
         android:layout_height="wrap_content"
         android:gravity="bottom"
         app:fabAlignmentMode="center"
-        app:fabCradleMargin="@dimen/dime0"
-        app:fabCradleRoundedCornerRadius="@dimen/dime0"
-        app:fabCradleVerticalOffset="@dimen/dime0"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,18 +101,19 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
     </com.google.android.material.bottomappbar.BottomAppBar>
 
+<!--
     <androidx.cardview.widget.CardView
         android:id="@+id/view2"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="@dimen/dime70"
+        android:layout_height="@dimen/dime70"
         android:layout_centerHorizontal="true"
         android:layout_gravity="bottom|center"
         android:elevation="12dp"
         android:innerRadius="0dp"
+
         android:outlineSpotShadowColor="@color/black"
         android:shape="ring"
-        android:thicknessRatio="1.9"
-        app:cardCornerRadius="40dp"
+        app:cardCornerRadius="@dimen/dime40"
         app:cardElevation="@dimen/dime0"
         app:layout_anchorGravity="bottom"
         app:layout_constraintBottom_toBottomOf="@id/bottom_app_bar"
@@ -124,27 +123,32 @@
 
         <ImageView
             android:id="@+id/imageView1"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/dime50"
+            android:layout_height="@dimen/dime50"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:src="@drawable/ic_home_1" />
     </androidx.cardview.widget.CardView>
+-->
 
-   <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dime10"
         android:background="@color/white"
-        android:outlineAmbientShadowColor="@android:color/white"
-        android:outlineSpotShadowColor="@android:color/white"
-        android:src="@drawable/ic_baseline_panorama_fish_eye_24"
+        android:src="@drawable/ic_home_1"
         app:borderWidth="@dimen/dime0"
-        app:elevation="0dp"
+        app:elevation="@dimen/dime2"
+        android:layout_marginBottom="@dimen/dime30"
         app:layout_anchor="@+id/bottom_app_bar"
         app:layout_anchorGravity="top|center"
-        app:rippleColor="@color/white" />-->
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_app_bar"
+        app:layout_constraintEnd_toEndOf="@+id/bottom_app_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_frag_contaner"
+        app:rippleColor="@color/black"
+        android:contentDescription="TODO" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
