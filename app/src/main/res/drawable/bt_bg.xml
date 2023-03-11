@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle">
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <solid android:color="@color/white" />
+    <corners
+        android:bottomLeftRadius="@dimen/dime20"
+        android:bottomRightRadius="@dimen/dime20"
+        android:topLeftRadius="@dimen/dime20"
+        android:topRightRadius="@dimen/dime20" />
+    <padding
+        android:bottom="@dimen/dime10"
+        android:left="@dimen/dime10"
+        android:right="@dimen/dime10"
+        android:top="@dimen/dime10" />
 
-    <padding android:top="@dimen/dimen5"
-        android:bottom="@dimen/dimen5"/>
-    <!-- Background Color -->
-    <solid android:color="@color/borderstork" />
+    <gradient
+        android:angle="90"
+        android:startColor="#D5D4D4"
+        android:centerColor="@color/white"
+        android:endColor="@color/white"
+        android:type="linear">
 
-    <!-- Border Color -->
-    <stroke
-        android:width="@dimen/dimen2"
-        android:color="@color/borderstork" />
-
-    <!-- Round Corners -->
-    <corners android:radius="@dimen/dimen5" />
+    </gradient>
 </shape>
-

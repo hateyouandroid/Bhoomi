@@ -1,346 +1,378 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/login_bg"
+    android:orientation="vertical"
     tools:context=".fragment.Home">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/fisrtcard"
-        android:paddingTop="@dimen/dime50"
-        android:paddingBottom="@dimen/dime20"
-        android:background="@drawable/gradiant_for_home_frag_1"
-        tools:ignore="MissingConstraints">
-
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dime20"
-            tools:ignore="MissingConstraints">
-
-            <TableRow android:padding="5dp">
-
-                <LinearLayout
-                    android:layout_marginTop="@dimen/dime0"
-
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginEnd="@dimen/dime5"
-                        android:contentDescription="TODO"
-                        android:gravity="center"
-                        android:src="@drawable/ic_phone" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:layout_marginTop="@dimen/dime10"
-                        android:text="home" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginEnd="@dimen/dime5"
-                        android:contentDescription="TODO"
-                        android:gravity="center"
-                        android:src="@drawable/ic_home" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="@dimen/dime10"
-
-                        android:text="home" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginEnd="@dimen/dime5"
-                        android:contentDescription="TODO"
-                        android:gravity="center"
-                        android:src="@drawable/ic_qr" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="@dimen/dime10"
-                        android:text="home" />
-
-                </LinearLayout>
-
-            </TableRow>
-
-            <TableRow android:padding="5dp">
-
-                <LinearLayout
-                    android:layout_marginTop="@dimen/dime0"
-
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginEnd="@dimen/dime5"
-                        android:contentDescription="TODO"
-                        android:gravity="center"
-                        android:src="@drawable/ic_qr" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="@dimen/dime10"
-                        android:text="home" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginEnd="@dimen/dime5"
-                        android:contentDescription="TODO"
-                        android:gravity="center"
-                        android:src="@drawable/ic_phone" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="@dimen/dime10"
-                        android:text="home \n" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginEnd="@dimen/dime5"
-                        android:contentDescription="TODO"
-                        android:gravity="center"
-                        android:src="@drawable/ic_home" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="@dimen/dime10"
-                        android:text="home" />
-
-                </LinearLayout>
-
-
-            </TableRow>
-
-            <TableRow android:padding="5dp">
-
-                <LinearLayout
-                    android:layout_marginTop="@dimen/dime0"
-
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginEnd="@dimen/dime5"
-                        android:contentDescription="TODO"
-                        android:gravity="center"
-                        android:src="@drawable/ic_qr" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="@dimen/dime10"
-                        android:text="Scan" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginEnd="@dimen/dime5"
-                        android:contentDescription="TODO"
-                        android:gravity="center"
-                        android:src="@drawable/ic_home" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="@dimen/dime10"
-                        android:text="home" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginEnd="@dimen/dime5"
-                        android:contentDescription="TODO"
-                        android:gravity="center"
-                        android:src="@drawable/ic_phone" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="@dimen/dime10"
-                        android:text="Cradit" />
-
-                </LinearLayout>
-
-
-            </TableRow>
-
-
-        </TableLayout>
-    </androidx.appcompat.widget.LinearLayoutCompat>
-
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dime20"
-        >
-
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cv_spin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dime20"
-            app:cardCornerRadius="@dimen/dime20"
-            android:padding="@dimen/dime20"
-            tools:ignore="MissingConstraints">
-            <RelativeLayout
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/fisrtcard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dime60"
-                android:layout_marginBottom="@dimen/dime20"
-                android:layout_marginStart="@dimen/dime20"
-                android:layout_marginEnd="@dimen/dime20"
-                >
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                android:background="@drawable/gradiant_for_home_frag_1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dime40"
+                android:paddingBottom="@dimen/dime20"
+                tools:ignore="MissingConstraints">
+
+<!--
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/dime20"
+                    android:layout_height="wrap_content">
+
+                &lt;!&ndash;    <androidx.viewpager2.widget.ViewPager2
+                        android:layout_width="match_parent"
+                        android:id="@+id/viewslider"
+                        android:layout_height="wrap_content"/>&ndash;&gt;
+                    <include layout="@layout/home_banner_1" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+-->
+
+                <TableLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_alignParentStart="true"
-                    >
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Spin the wheel"
-                        android:textColor="@color/black"
-                        android:textSize="25sp"/>
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Win Everyday"
-                        android:textSize="15sp"/>
+                    android:layout_margin="@dimen/dime20"
+                    tools:ignore="MissingConstraints">
 
-                </LinearLayout>
+                    <TableRow android:padding="5dp">
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/dime0"
 
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="13dp"
-                    android:text="Spin Now" />
+                            android:layout_weight="1"
+                            android:orientation="vertical">
 
-            </RelativeLayout>
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:theme="@style/ThemeOverlay.Material3.FloatingActionButton.Tertiary"
+                                android:layout_marginEnd="@dimen/dime5"
+                                android:contentDescription="TODO"
+                                android:gravity="center"
+                                android:src="@drawable/ic_phone" />
 
-            </androidx.appcompat.widget.AppCompatTextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/dime10"
+                                android:text="home" />
 
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:elevation="12dp"
-            app:cardElevation="@dimen/dime10"
-            android:id="@+id/view2"
-            app:layout_anchor="@id/cv_spin"
-            android:layout_marginStart="@dimen/dime50"
-            app:layout_anchorGravity="start"
-            android:layout_marginBottom="@dimen/dime10"
-            app:cardCornerRadius="40dp"
-            android:shape="ring"
-           >
-            <ImageView
-                android:layout_height="60dp"
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/dime5"
+                                android:contentDescription="TODO"
+                                android:gravity="center"
+                                android:src="@drawable/ic_home" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/dime10"
+
+                                android:text="home" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/dime5"
+                                android:contentDescription="TODO"
+                                android:gravity="center"
+                                android:src="@drawable/ic_qr" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/dime10"
+                                android:text="home" />
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/dime0"
+
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/dime5"
+                                android:contentDescription="TODO"
+                                android:gravity="center"
+                                android:src="@drawable/ic_qr" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/dime10"
+                                android:text="home" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/dime5"
+                                android:contentDescription="TODO"
+                                android:gravity="center"
+                                android:src="@drawable/ic_phone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/dime10"
+                                android:text="home \n" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/dime5"
+                                android:contentDescription="TODO"
+                                android:gravity="center"
+                                android:src="@drawable/ic_home" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/dime10"
+                                android:text="home" />
+
+                        </LinearLayout>
+
+
+                    </TableRow>
+
+                    <TableRow android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/dime0"
+
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/dime5"
+                                android:contentDescription="TODO"
+                                android:gravity="center"
+                                android:src="@drawable/ic_qr" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/dime10"
+                                android:text="Scan" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/dime5"
+                                android:contentDescription="TODO"
+                                android:gravity="center"
+                                android:src="@drawable/ic_home" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/dime10"
+                                android:text="home" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/dime5"
+                                android:contentDescription="TODO"
+                                android:gravity="center"
+                                android:src="@drawable/ic_phone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/dime10"
+                                android:text="Cradit" />
+
+                        </LinearLayout>
+
+
+                    </TableRow>
+
+
+                </TableLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
                 android:layout_width="match_parent"
-                android:id="@+id/imageView1"
-                android:src="@mipmap/ic_chakri"
-                >
-            </ImageView>
-        </androidx.cardview.widget.CardView>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dime20">
 
 
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_spin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dime20"
+                    android:padding="@dimen/dime20"
+                    android:backgroundTint="#F78DA7"
+                    app:cardCornerRadius="@dimen/dime20"
+                    tools:ignore="MissingConstraints">
 
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dime20"
+                        android:layout_marginTop="@dimen/dime60"
+                        android:layout_marginEnd="@dimen/dime20"
+                        android:layout_marginBottom="@dimen/dime20">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Spin the wheel"
+                                android:textColor="@color/black"
+                                android:textSize="25sp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Win Everyday"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/bt_bg"
+                            android:textColor="@color/white"
+                            android:textSize="11sp"
+                            android:padding="@dimen/dime2"
+                            android:backgroundTint="@color/borderstork"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="13dp"
+                            android:text="Spin Now" />
+
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </androidx.appcompat.widget.AppCompatTextView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/view2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="@dimen/dime50"
+                    android:layout_marginBottom="@dimen/dime10"
+                    android:elevation="12dp"
+                    android:shape="ring"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="@dimen/dime10"
+                    app:layout_anchor="@id/cv_spin"
+                    app:layout_anchorGravity="start">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:padding="@dimen/dime1"
+                        android:src="@drawable/chakri"/>
+                </androidx.cardview.widget.CardView>
+
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+<!--
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include
+                    layout="@layout/recharge_bills"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+-->
 
         </androidx.appcompat.widget.LinearLayoutCompat>
     </ScrollView>

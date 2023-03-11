@@ -5,18 +5,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:layout_marginEnd="@dimen/dime20"
+        android:layout_width="@dimen/dime300"
+        android:id="@+id/tv_slider"
+        android:layout_marginEnd="@dimen/dime40"
         android:background="@drawable/home_frag_banner_1"
         android:layout_marginTop="@dimen/dime20"
-        android:layout_marginStart="@dimen/dime20"
-        android:layout_height="80dp">
+        android:layout_marginStart="@dimen/dime40"
+        android:layout_height="@dimen/dime60">
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:text="Offers"
             android:layout_margin="@dimen/dime5"
             android:textSize="25sp"
-            android:textStyle="italic"
             android:textColor="@color/white"
             android:layout_height="wrap_content"/>
         <!--

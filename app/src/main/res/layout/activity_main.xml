@@ -84,9 +84,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
            android:layout_marginEnd="@dimen/dime10"
+
             app:menu="@menu/home_bottom_nav_bar_menu"
-            android:background="@android:color/transparent"
-            >
+            android:background="@android:color/transparent">
 
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
