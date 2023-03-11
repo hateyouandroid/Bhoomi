@@ -27,4 +27,5 @@
     <dimen name="dime40">40dp</dimen>
     <dimen name="dime80">80dp</dimen>
     <dimen name="dime60">60dp</dimen>
+    <dimen name="dime12">12dp</dimen>
 </resources>
